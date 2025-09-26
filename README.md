@@ -40,7 +40,7 @@ New balance: ₱115.0
 
 ## Flowchart
 
-![flowchart.png](flowchart.png)
+![flowchart.png](flowchart.jpg)
 
 ## Contributors
 - Student 1: Rheian Jay G. Negad (input validation, user interface)
