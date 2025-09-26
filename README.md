@@ -38,6 +38,9 @@ Bought Burger
 
 New balance: ₱115.0
 
+## Flowchart
+
+![flowchart.png](flowchart.png)
 
 ## Contributors
 - Student 1: Rheian Jay G. Negad (input validation, user interface)
