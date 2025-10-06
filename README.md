@@ -22,7 +22,7 @@ It shows a menu of food items with prices, allows a student to enter their stude
 
 ## Example Output
 
-Enter Student Number: 2023-0001
+Enter Student Number: 04-2023-067
 
 Welcome Dela Cruz, Juan! Balance: ₱150.0
 
