@@ -24,28 +24,35 @@ if student_no in student_numbers:
     print("\nMenu")
     for j in range(len(items)):
         print(str(j+1) + ". " + items[j] + " ₱" + str(prices[j]))
+    print("\n Press 0 to exit")
 
-    choice = int(input("Choose item number: "))
-    item_index = choice - 1
+    choice = input("Choose item number: ")
+    
+    if choice.isdigit():
+        choice_inputed = int(choice)
+    
+    item_index = choice_inputed - 1
     cost = prices[item_index]
-
-    if balance >= cost:
-        balances[i] = balance - cost
+    
+    if not choice_inputed == 0:
+        if balance >= cost:
+            balances[i] = balance - cost
         
-        # Update tracking lists
-        sales_count[item_index] = sales_count[item_index] + 1
-        revenue[item_index] = revenue[item_index] + cost
+            # Update tracking lists
+            sales_count[item_index] = sales_count[item_index] + 1
+            revenue[item_index] = revenue[item_index] + cost
         
-        print("Bought " + items[item_index])
-        print("New balance: ₱" + str(balances[i]))
+            print("Bought " + items[item_index])
+            print("New balance: ₱" + str(balances[i]))
         
-        # Print summary for this session
-        print("\n--- Session Summary ---")
-        print("Item: " + items[item_index])
-        print("Times bought today: " + str(sales_count[item_index]))
-        print("Total item revenue: ₱" + str(revenue[item_index]))
+            # Print summary for this session
+            print("\n--- Session Summary ---")
+            print("Item: " + items[item_index])
+            print("Times bought today: " + str(sales_count[item_index]))
+            print("Total item revenue: ₱" + str(revenue[item_index]))
+        else:
+            print("Insufficient funds")
     else:
-        print("Insufficient funds")
+        print("Transaction cancelled. ")
 else:
     print("Student not found")
-
