@@ -7,7 +7,7 @@ balances = [150.00, 200.00]
 items = ["Burger", "Fries", "Hotdog", "Juice"]
 prices = [35.00, 30.00, 25.00, 20.00]
 
-# NEW: parallel lists for tracking
+# parallel lists for tracking
 sales_count = [0, 0, 0, 0]
 revenue = [0.0, 0.0, 0.0, 0.0]
 
@@ -27,13 +27,14 @@ if student_no in student_numbers:
     print("\n Press 0 to exit")
 
     choice = input("Choose item number: ")
-    
+
+    # NEW: checks if the input is all digits and if it is, then turns it into an integer
     if choice.isdigit():
         choice_inputed = int(choice)
-    
+        # prepares for the calculation of the cost
         item_index = choice_inputed - 1
         cost = prices[item_index]
-    
+        # NEW: cancels transaction if the variable choice_inputed == 0
         if not choice_inputed == 0:
             if balance >= cost:
                 balances[i] = balance - cost
