@@ -35,6 +35,7 @@ This web application automates school canteen transactions. Students select food
  3. Tray. Review the total and adjust quantities.
  4. Payment. Enter the account PIN.
  5. Success. The system deducts the total from the student balance.
+ ![flowchart.png](flowchart.png)
 ## Contributors
  * Rheian Jay G. Negad. Interface design and input validation.
  * Elvin Jerald U. Lim. Backend architecture and reporting logic.
